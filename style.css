@@ -1,0 +1,84 @@
+html {
+    background: black;
+    color: #ffffff;
+}
+
+.iphone {
+    display: flex;
+    margin: auto;
+    z-index: 15;
+    position: relative;
+}
+
+.phonebuttons {
+    position: absolute;
+    margin: auto;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+#onoffbutton {
+    right: 45px;
+    bottom: 630px;
+    height: 70px;
+    width: 20px;
+    z-index: 20;
+    background: white; opacity: 0.5;
+}
+
+.homebutton {
+    right: 0px;
+    left: 0px;
+    bottom: 90px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background: green; opacity: 0.5;
+}
+
+.iphone-container {
+    border: 5px solid green;
+    height: max-content;
+    width: max-content;
+    position: relative;
+    margin: auto;
+}
+
+.app {
+    z-index: 5;
+    width: 75px;
+}
+
+.musicapp {
+    top: 200px;
+    left: 109px;
+    position: absolute;
+}
+
+.notesapp {
+    top: 200px;
+    left: 210px;
+    position: absolute; }
+
+.background {
+    position: absolute;
+    z-index: -1;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+    top: 155px;
+}
+
+#black-cover {
+    background: black;
+    position: absolute;
+    z-index: 10;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+    top: 155px;
+    width: 350px;
+    height: 650px;
+    opacity: 1;
+}
