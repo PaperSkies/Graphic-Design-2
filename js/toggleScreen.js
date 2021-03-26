@@ -1,13 +1,3 @@
-// Extract a dom object from a template.
-class HtmlUtility {
-  static stringToHTML(string) {
-    const template = document.createElement('template');
-    template.innerHTML = string.trim();
-    return template.content.firstChild;
-  }
-}
-
-
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // |       Screen Cover       |
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -38,6 +28,12 @@ document.getElementById('onoffbutton').addEventListener('click', function () {
 
 
 
+// Handy utility to convert a string to a DOM Node.
+function string_to_html_node(string) {
+    const template = document.createElement('template');
+    template.innerHTML = string.trim();
+    return template.content.firstChild;
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~
 // |      App Icons       |
@@ -46,8 +42,8 @@ document.getElementById('onoffbutton').addEventListener('click', function () {
 // Store reference to app icon container to a variable.
 const appContainer = document.getElementById('app-container');
 
-const musicApp = HtmlUtility.stringToHTML(`<img class="musicapp app" src="images/musicapp.svg"/>`)
-const noteApp = HtmlUtility.stringToHTML(`<img class="notesapp app" src="images/notesapp.svg"/>`)
+const musicApp = string_to_html_node(`<img class="musicapp app" src="images/musicapp.svg"/>`)
+const noteApp = string_to_html_node(`<img class="notesapp app" src="images/notesapp.svg"/>`)
 
 appContainer.appendChild(musicApp)
 appContainer.appendChild(noteApp)
