@@ -6,7 +6,7 @@ html {
 .iphone {
     display: flex;
     margin: auto;
-    z-index: 15;
+    z-index: 5;
     position: relative;
 }
 
@@ -15,6 +15,7 @@ html {
     margin: auto;
     outline: none;
     cursor: pointer;
+    z-index: 10;
     border: none;
 }
 
@@ -23,7 +24,6 @@ html {
     bottom: 630px;
     height: 70px;
     width: 20px;
-    z-index: 20;
     background: white; opacity: 0.5;
 }
 
@@ -34,7 +34,7 @@ html {
     height: 50px;
     width: 50px;
     border-radius: 100%;
-    background: green; opacity: 0.5;
+    background: blue; opacity: 0.2;
 }
 
 .iphone-container {
@@ -46,8 +46,9 @@ html {
 }
 
 .app {
-    z-index: 5;
+    z-index: 2;
     width: 75px;
+    cursor: pointer;
 }
 
 .musicapp {
@@ -63,7 +64,7 @@ html {
 
 .background {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     margin: auto;
     right: 0px;
     left: 0px;
@@ -73,7 +74,7 @@ html {
 #black-cover {
     background: black;
     position: absolute;
-    z-index: 10;
+    z-index: 4;
     margin: auto;
     right: 0px;
     left: 0px;
@@ -82,3 +83,63 @@ html {
     height: 650px;
     opacity: 1;
 }
+
+.notificationbar {
+    position: absolute;
+    margin: auto;
+    width: 340px;
+    left: 0;
+    right: 0;
+    top: 165px;
+    z-index: 1;
+}
+
+.wifi {
+    width: 15px;
+    position: absolute;
+    margin: auto;
+    right: 90px;
+    top: 167px;
+    z-index: 2;
+}
+
+.backgroundma {
+    position: absolute;
+    z-index: 0;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+    top: 100px;
+}
+
+.player {
+    width: 60px;
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    top: 640px;
+    z-index: 2;
+}
+
+.rightbutton {
+    width: 40px;
+    bottom: 225px;
+    right: -160px;
+}
+
+.leftbutton {
+    width: 40px;
+    bottom: 225px;
+    left: -160px;
+}
+
+.coverobsidian {
+    position: absolute;
+    margin: auto;
+    width: 280px;
+    left: 0;
+    right: 0;
+    top: 250px;
+}
+
