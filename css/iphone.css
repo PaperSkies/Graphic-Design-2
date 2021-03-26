@@ -44,15 +44,17 @@ html {
     position: relative;
     margin: auto;
     
-    animation: spin 3s; // Animation
+    animation: fly 3s; // Animation
 }
 
-@keyframes spin {
+@keyframes fly {
     from {
+        opacity: 0;
         transform: translateY(100%);
         filter: blur(10px)
     }
     to {
+        opacity: 1;
         transform: translateY(0);
         filter: blur(0)
     }
