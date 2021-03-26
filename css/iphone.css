@@ -19,17 +19,18 @@ html {
 }
 
 #onoffbutton {
-    right: 45px;
+    /* background: white; opacity: 0.5; */
+    background: transparent;
     bottom: 630px;
     height: 70px;
     width: 20px;
     z-index: 20;
-    background: white; opacity: 0.5;
+    right: 45px;
 }
 
 .homebutton {
-    right: 0px;
-    left: 0px;
+    right: 0;
+    left: 0;
     bottom: 90px;
     height: 50px;
     width: 50px;
@@ -38,16 +39,29 @@ html {
 }
 
 .iphone-container {
-    border: 5px solid green;
     height: max-content;
     width: max-content;
     position: relative;
     margin: auto;
+    
+    animation: spin 3s; // Animation
+}
+
+@keyframes spin {
+    from {
+        transform: translateY(100%);
+        filter: blur(10px)
+    }
+    to {
+        transform: translateY(0);
+        filter: blur(0)
+    }
 }
 
 .app {
     z-index: 5;
     width: 75px;
+    opacity: 0;
 }
 
 .musicapp {
@@ -65,8 +79,8 @@ html {
     position: absolute;
     z-index: -1;
     margin: auto;
-    right: 0px;
-    left: 0px;
+    right: 0;
+    left: 0;
     top: 155px;
 }
 
@@ -75,10 +89,24 @@ html {
     position: absolute;
     z-index: 10;
     margin: auto;
-    right: 0px;
-    left: 0px;
+    right: 0;
+    left: 0;
     top: 155px;
     width: 350px;
     height: 650px;
     opacity: 1;
+}
+
+.app-animation {
+    animation: pop .4s forwards;
+    opacity: 1;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0, 0)
+    }
+    100% {
+        transform: scale(1, 1)
+    }
 }
