@@ -1,55 +1,49 @@
+#music-page {
+    position: absolute;
+
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    
+    opacity: 0;
+    transition: 0.1s;
+    transform: scale(0, 0);
+    
+    z-index: 9;
+}
+
 .background-ma {
     position: absolute;
     z-index: 0;
-    margin: auto;
-    right: 0px;
-    left: 0px;
-    top: 100px;
-}
-
-.player {
-    width: 60px;
-    position: absolute;
-    margin: auto;
-    left: 0px;
-    right: 0px;
-    top: 640px;
-    z-index: 2;
-}
-
-.right-button {
-    width: 40px;
-    top: 652px;
-    right: -160px;
-    position: absolute;
-    margin: auto;
-}
-
-.left-button {
-    width: 40px;
-    top: 652px;
-    left: -160px;
-    position: absolute;
-    margin: auto;
+    top: -46px; // Fix empty space at top of image
 }
 
 .cover-obsidian {
+    width: 80%;
+    
     position: absolute;
     margin: auto;
-    width: 280px;
-    left: 0;
+    top: 50px;
     right: 0;
-    top: 250px;
+    left: 0;
 }
 
 #music-player {
-    z-index: 9;
-    transition: 0.1s;
-    transform: scale(0, 0);
-    opacity: 0;
+    width: 300px;
+    height: 100px;
+
     position: absolute;
-    top: 0;
     margin: auto;
+    bottom: 20px;
     right: 0;
     left: 0;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Effects all img tags inside #music-player */
+#music-player img {
+    width: 50px;
 }

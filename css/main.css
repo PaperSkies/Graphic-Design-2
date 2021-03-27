@@ -4,59 +4,75 @@ html {
 }
 
 .iphone {
+    position: relative;
     display: flex;
     margin: auto;
+    
     z-index: 10;
-    position: relative;
 }
 
-.iphone-container {
-    height: max-content;
-    width: max-content;
+#iphone-container {
     position: relative;
     margin: auto;
+    
+    width: max-content;
 }
 
-.background {
+#screen-container {
+    position: absolute;
+    display: flex;
+    margin: auto;
+    
+    top: 10.1rem;
+    right: 0;
+    left: 0;
+
+    height: 37.65rem;
+    width: 67.5%;
+}
+
+#screen-wrapper {
+    position: relative;
+    
+    height: 100%;
+    width: 100%;
+}
+
+#background {
     position: absolute;
     z-index: 0;
-    margin: auto;
-    right: 0px;
-    left: 0px;
-    top: 155px;
 }
 
 #black-cover {
     background: black;
     position: absolute;
-    transition: 0.1s;
-    z-index: 4;
-    margin: auto;
-    right: 0px;
-    left: 0px;
-    top: 155px;
-    width: 350px;
-    height: 650px;
+
+    height: 100%;
+    width: 100%;
+    
     opacity: 1;
-    pointer-events: none;
+    transition: 0.1s;
+    
+    z-index: 4;
     display: block;
+    pointer-events: none;
 }
 
 .notification-bar {
+    width: 100%;
+    
     position: absolute;
-    margin: auto;
-    width: 340px;
     left: 0;
-    right: 0;
-    top: 165px;
+    
     z-index: 1;
 }
 
 .wifi {
     width: 15px;
+    
     position: absolute;
-    margin: auto;
-    right: 90px;
-    top: 167px;
+    right: 3px;
+    top: 3px;
+    
     z-index: 2;
 }

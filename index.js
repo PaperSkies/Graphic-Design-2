@@ -26,6 +26,7 @@ function turnOffScreen() {
     cover.style.opacity = "1" // show cover
     screenIsOn = false
     hideAppIcons()
+    hideMusicPage()
 }
 
 
@@ -81,5 +82,7 @@ function showMusicPage() {
 function hideMusicPage() {
     musicPage.style.opacity = "0";
     musicPage.style.transform = "scale(0, 1)"
-    showAppIcons()
+    if (screenIsOn) {
+        showAppIcons()
+    }
 }

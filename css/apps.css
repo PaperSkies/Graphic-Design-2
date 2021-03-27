@@ -1,22 +1,23 @@
 .app {
-    z-index: 14;
     width: 75px;
+
+    position: relative;
     cursor: pointer;
+
     transform: scale(0);
-    animation-delay: 0.05s;
+    animation-delay: 50ms;
+
+    z-index: 14;
 }
 
 #music-app {
-    top: 200px;
-    left: 109px;
-    position: absolute;
-    cursor: pointer;
+    margin-left: 7%;
+    margin-top: 15%;
 }
 
 #notes-app {
-    top: 200px;
-    left: 210px;
-    position: absolute;
+    margin-left: 5%;
+    margin-top: 15%;
 }
 
 
