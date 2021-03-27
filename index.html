@@ -1,51 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title>
-            Assignment 2
-        </title>
-        
-         <link rel="stylesheet" href="style.css">
+        <title>Assignment 2</title>
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/apps.css">
+        <link rel="stylesheet" href="css/buttons.css">
+        <link rel="stylesheet" href="css/music-app.css">
     </head>
-    
-    
+
     <body>
-        <header>My Website is the best</header>
-        
         <div class="iphone-container">
-            <img class="iphone" src="images/iphone.png" width="500" />
-            
-            <button class="phonebuttons" id="onoffbutton">
-            </button>
-            
-            <button class="homebutton phonebuttons" id="homebutton">
-                
-            </button>
-            
-            <img class="notificationbar" src="images/Bar.svg">
+            <div id="black-cover"></div>
+
+            <img class="notification-bar" src="images/Bar.svg">
             <img class="wifi" src="images/wifi.svg">
 
-            <div id="app-container"></div>
-
+            <img class="iphone" src="images/iphone.png" width="500" />
             <img class="background" src="images/background.svg" width="350px">
 
-        <div id="musicplayer">
-            <div class="musicplayer-container" style="position:relative">
-            <img class="backgroundma" src="images/musicappbackground.svg" width="350px">
-            <img class="player" src="images/playbutton.svg">
-            <img class="rightbutton player" src="images/rightbutton.svg">
-            <img class="leftbutton player" src="images/leftbutton.svg">
-            <img class="coverobsidian" src="images/CoverObsidian.svg">
+            <img id="music-app" class="app" src="images/musicapp.svg">
+            <img id="notes-app" class="app" src="images/notesapp.svg">
+
+            <button class="phone-buttons" id="power-button"></button>
+            <button class="phone-buttons" id="home-button"></button>
+
+            <div id="music-page">
+                <img class="background-ma" src="images/musicappbackground.svg" width="350px">
+                <img class="player" src="images/playbutton.svg">
+                <img id="right-button" class="player" src="images/rightbutton.svg">
+                <img id="left-button" class="player" src="images/leftbutton.svg">
+                <img class="cover-obsidian" src="images/CoverObsidian.svg">
             </div>
         </div>
-            
-            
-            <div id="black-cover"></div>
-        </div>
     </body>
-    <script type="module" src="javafucker.js"></script>
+    
+    <script type="module" src="index.js"></script>
+
+    <noscript>Please enable javascript to use this website</noscript>
 </html>
