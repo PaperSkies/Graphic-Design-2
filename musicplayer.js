@@ -39,26 +39,26 @@ const playButton = document.getElementById('play-button')
 playButton.addEventListener('click', PlayPause)
 
 
+const musicPlayer = document.getElementById('music-player');
 
 function swapIcon() {
-	const musicPlayer = document.getElementById('music-player');
-	
+
 	if (player.paused) {
 		pauseButton.style.transform = 'scaleY(0)';
 		// Wait for this ☝🏽 animation to finish (1000ms = 1s)
-		musicPlayer.appendChild(playButton);
+		// musicPlayer.appendChild(playButton);
 		playButton.style.transform = 'scale(0)';
 		setTimeout(() => {
-			musicPlayer.removeChild(pauseButton);
+			// musicPlayer.removeChild(pauseButton);
 			playButton.style.transform = 'scale(1)';
 		}, 500);
 	} else {
 		playButton.style.transform = 'scale(0)'
 		// Wait for this ☝🏽 animation to finish (1000ms = 1s)
-		musicPlayer.appendChild(pauseButton);
+		// musicPlayer.appendChild(pauseButton);
 		pauseButton.style.transform = 'scaleY(0)';
 		setTimeout(() => {
-			musicPlayer.removeChild(playButton);
+			// musicPlayer.removeChild(playButton);
 			pauseButton.style.transform = 'scaleY(1)';
 		}, 500);
 	}
@@ -109,8 +109,28 @@ pauseButton.append(bar1);
 pauseButton.append(bar2);
 pauseButton.addEventListener('click', PlayPause)
 console.log(pauseButton)
+musicPlayer.appendChild(pauseButton)
 
 
 
 
 
+const musicSelection = ["datasphere", "daydream", "fold"]
+let index = 0
+let activeSong = musicSelection[index]
+
+function nextsong() {
+	const isPlaying = !player.paused
+
+	index > 1
+	? index = 0
+	: index++
+	
+	activeSong = musicSelection[index]
+	
+	if (isPlaying) player.pause()
+	player.src = `audio/${activeSong}/${activeSong}.mp3`
+	if (isPlaying) player.play()
+}
+
+$("next-button").addEventListener("click", nextsong)
