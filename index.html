@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,8 +33,10 @@
                     <button class="phone-buttons" id="home-button"></button>
 
                     
-                    <div id="music-page">
-                        <img class="background-ma" src="images/musicappbackground.svg" width="350px">
+                    <!-- Music App Screen -->
+                    <div id="music-page-container">
+                        
+                        <img class="music-app-background" src="images/musicappbackground.svg" width="350px">
                         <img class="cover-obsidian" src="images/CoverObsidian.svg">
                         
                         <div id="music-player">
@@ -48,7 +51,10 @@
         </div>
     </body>
     
-    <script type="module" src="index.js"></script>
-
+    <audio controls src="audio/easy.mp3" type="audio/mpeg" />
+    
+    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./js/musicplayer.js"></script>
+    
     <noscript>Please enable javascript to use this website</noscript>
 </html>

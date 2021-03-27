@@ -1,7 +1,4 @@
-// Helper function. Let's us use $() instead of document.getElementById()
-function $(id) { return document.getElementById(id); }
-
-
+const $ = (id) => document.getElementById(id)
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // |       Screen Cover       |
@@ -71,7 +68,7 @@ musicApp.addEventListener("click", () => {
 // |      Music Page      |
 // ~~~~~~~~~~~~~~~~~~~~~~~~
 
-const musicPage = $('music-page')
+const musicPage = $('music-page-container')
 
 function showMusicPage() {
     musicPage.style.opacity = "1";
@@ -86,3 +83,9 @@ function hideMusicPage() {
         showAppIcons()
     }
 }
+
+
+
+
+
+

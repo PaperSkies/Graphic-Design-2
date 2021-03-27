@@ -1,4 +1,4 @@
-#music-page {
+#music-page-container {
     position: absolute;
 
     right: 0;
@@ -13,7 +13,7 @@
     z-index: 9;
 }
 
-.background-ma {
+.music-app-background {
     position: absolute;
     z-index: 0;
     top: -46px; // Fix empty space at top of image
@@ -30,7 +30,7 @@
 }
 
 #music-player {
-    width: 300px;
+    width: 545px;
     height: 100px;
 
     position: absolute;
@@ -41,9 +41,33 @@
 
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Effects all img tags inside #music-player */
 #music-player img {
     width: 50px;
+}
+
+#play-button, #pause-button {
+    position: absolute;
+    cursor: pointer;
+    z-index: 200;
+    transition: .5s;
+    margin: auto;
+    left: 0;
+    right: 202px;
+}
+
+#next-button {
+    position: absolute;
+    left: 40px;
+    bottom: 28px
+}
+
+#next-button {
+    position: absolute;
+    right: 40px;
+    bottom: 28px
 }
