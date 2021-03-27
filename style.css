@@ -6,7 +6,7 @@ html {
 .iphone {
     display: flex;
     margin: auto;
-    z-index: 5;
+    z-index: 10;
     position: relative;
 }
 
@@ -15,7 +15,7 @@ html {
     margin: auto;
     outline: none;
     cursor: pointer;
-    z-index: 10;
+    z-index: 15;
     border: none;
 }
 
@@ -46,21 +46,26 @@ html {
 }
 
 .app {
-    z-index: 2;
+    z-index: 14;
     width: 75px;
     cursor: pointer;
+    transform: scale(0);
+    animation: pop .4s forwards;
+    animation-delay: 0.05s;
 }
 
 .musicapp {
     top: 200px;
     left: 109px;
     position: absolute;
+    cursor: pointer;
 }
 
 .notesapp {
     top: 200px;
     left: 210px;
-    position: absolute; }
+    position: absolute; 
+}
 
 .background {
     position: absolute;
@@ -74,6 +79,7 @@ html {
 #black-cover {
     background: black;
     position: absolute;
+    transition: 0.1s;
     z-index: 4;
     margin: auto;
     right: 0px;
@@ -82,6 +88,8 @@ html {
     width: 350px;
     height: 650px;
     opacity: 1;
+    pointer-events: none;
+    display: block;
 }
 
 .notificationbar {
@@ -124,14 +132,18 @@ html {
 
 .rightbutton {
     width: 40px;
-    bottom: 225px;
+    top: 652px;
     right: -160px;
+    position: absolute;
+    margin: auto;
 }
 
 .leftbutton {
     width: 40px;
-    bottom: 225px;
+    top: 652px;
     left: -160px;
+    position: absolute;
+    margin: auto;
 }
 
 .coverobsidian {
@@ -143,3 +155,26 @@ html {
     top: 250px;
 }
 
+
+#musicplayer {
+    z-index: 9;
+    transition: 0.1s;
+    transform: scale(0, 0);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    right: 0;
+    left: 0;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+} 
