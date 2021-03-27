@@ -1,10 +1,19 @@
 # Words
 
-<img src="images/cat.png" width="20%" align="center" />
+<div display="flex">
+<img src="images/cat.png" width="10%" align="center" />
+<img src="images/cat.png" width="5%" align="center"/>
+<img src="images/illest.png" width="2.5%" align="center"/>
+<img src="images/cat.png" width="5%" align="center"/>
 <img src="images/cat.png" width="10%" align="center"/>
-<img src="images/illest.png" width="5%" align="center"/>
+</div>
+<div display="flex">
+<img src="images/cat.png" width="5%" align="center"/>
+<img src="images/illest.png" width="2.5%" align="center"/>
+<img src="images/cat.png" width="5%" align="center"/>
 <img src="images/cat.png" width="10%" align="center"/>
-<img src="images/cat.png" width="20%" align="center"/>
+</div>
 
 ### Instructions
-- Hit the power button
+- Start Live Server
+- Hit the power button on the iPhone
