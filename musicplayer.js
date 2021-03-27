@@ -109,3 +109,9 @@ pauseButton.append(bar1);
 pauseButton.append(bar2);
 pauseButton.addEventListener('click', PlayPause)
 console.log(pauseButton)
+
+
+
+
+
+
