@@ -83,9 +83,3 @@ function hideMusicPage() {
         showAppIcons()
     }
 }
-
-
-
-
-
-
